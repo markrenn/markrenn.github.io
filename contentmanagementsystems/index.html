@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>How we build news websites with Drupal</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="http://www.tnp.sg/sites/all/themes/custom/tnp2016/css/style.css?odfttw">
+    <link rel="stylesheet" href="http://www.tnp.sg/sites/all/themes/custom/tnp2016/css/article.css?odfttw">
+    <link rel="stylesheet" href="css/theme/tnp.css">
+
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-transition="zoom">
+          <h1 class="fragment">How we build news websites </h1>
+          <div class="fragment fade-left">
+          <h1>with Drupal</h1>
+          <div style="position: absolute; bottom: 0; z-index: -1; right: -53%;">
+            <img src="css/theme/img/drupal.fw.png" style="border: 0; background: transparent; margin: 0; width:25%; box-shadow: none; ">
+          </div>
+        </section>
+        <section>
+          <h1>Survey</h1>
+          <img src="http://i.giphy.com/l2Jei24C2J7dsKhby.gif" /><br />
+          <ul>
+            <li class="fragment fade-right">Works in the Media Industry?</li>
+            <li class="fragment fade-right">Drupal Developers?</li>
+          </ul>
+        </section>
+        <section>
+	        <section>
+	          <h1>What is Drupal</h1>
+	          <ul>
+	            <li class="fragment fade-right">It's an open source CMS?</li>
+	            <li class="fragment fade-right">Started by Dries Buytaert and Hans Snijde in the year 2000</li>
+	            <li class="fragment fade-right">It's an application development framework</li>
+	          </ul>
+	        </section>
+		      <section>
+	          <h1>Why Drupal?</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="http://i.giphy.com/c5wbvuaVVLWzC.gif" >
+		        <h1>Open Source</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="http://i.giphy.com/BQAk13taTaKYw.gif" >
+		        <h1>Large Community</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="http://i.giphy.com/eCqFYAVjjDksg.gif" >
+		        <h1>Excellent Security</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="http://i.giphy.com/ROVrilZKIPQoU.gif" >
+		        <h1>Modular</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="https://68.media.tumblr.com/74fcf46371bdeeda5fdb50239632a291/tumblr_inline_no9c8xuT0P1t9bsnt_500.gif" >
+		        <h1>Versatile</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="https://68.media.tumblr.com/d0d096f3814170a77412a279f0c42613/tumblr_inline_nxzanhsRiE1t9bsnt_500.gif" >
+		        <h1>Quality code</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="css/theme/img/drupal-v1.png" >
+		        <h1>Mature</h1>
+		      </section>
+		      <section>
+	          <h1 style="opacity: 0.05">Why Drupal?</h1>
+	          <img src="https://media.giphy.com/media/xhTpaG71Y44Mg/source.gif" >
+		        <h2>Reliable Performance</h2>
+		      </section>
+        </section>
+        <section>
+          <section>
+            <h2>What are the demands and challenges of developing and maintaining news websites?</h2>
+          </section>
+          <section>
+	          <img src="http://i.giphy.com/c86acqtUASfAY.gif"  style="max-width: 50%;" />
+            <h2>Multimedia Storytelling</h2>
+          </section>
+          <section>
+	          <img src="https://68.media.tumblr.com/b803c1d2bfd0d36c650be4a26f8a92f3/tumblr_inline_o2ncnl2SnW1t9bsnt_500.gif" />
+            <h2>Challenging the Print Mindset</h2>
+          </section>
+          <section>
+	          <img src="css/theme/img/poor-wysiwyg.png" >
+            <h2>Structured and Semantic Markup</h2>
+          </section>
+          <section>
+	          <img src="https://68.media.tumblr.com/1cf170f74af324ee2f944c382a961ec9/tumblr_inline_od575dRTan1t9bsnt_500.gif" />
+            <h2>Urgency</h2>
+          </section>
+          <section>
+	          <img src="http://i.giphy.com/VXnwgYcD2kSTS.gif" />
+            <h2>Content curation rules and overrides</h2>
+          </section>
+          <section>
+	          <img src="https://68.media.tumblr.com/858926353c14002950dbe41031c06c4e/tumblr_inline_nxza394KPw1t9bsnt_500.gif" />
+            <h2>Agnostic content and Shareability</h2>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Demo</h1>
+          </section>
+        </section>
+        <!--section>
+          <section><h1>Learnings</h1></section>
+          <section>
+          <img src="http://66.media.tumblr.com/ae10cbd594e0e2e42a336bc976062f30/tumblr_inline_o57ufzQOQY1t9bsnt_500.gif" />
+          <h2>We have more time for innovation</h2>
+          </section>
+          <section>
+          <img src="http://65.media.tumblr.com/239aa6c3e0b5b51f0ce84c939c497d01/tumblr_inline_o7mvqafgP11t9bsnt_500.gif" />
+          <h2>The challenge is to provide an efficient and intuitive way for stakeholders to deliver the demands of the style guide.</h2>
+          </section>
+          <section>
+          <img src="http://1.bp.blogspot.com/-3EDJJFvobcw/Vy5LmxIl93I/AAAAAAAAVIo/Z1v4CBrqdLgm4ttP0zo-hMkKuoikwOlwQCK4B/s1600/YIS9f.jpg" style="max-width: 50%;" />
+          <h2>We all have the same end goal, we just use different metrics</h2>
+          </section>
+        </section//-->
+        <section>
+          <h1>Thank you!</h1>
+        </section>
+        <section>
+          <h1>Links and References</h1>
+          <ul>
+            <li>Style Guides by Brad Frost (<a href="http://bradfrost.com/blog/post/style-guides/">http://bradfrost.com/blog/post/style-guides/</a>)</li>
+            <li>Content &amp; Display Patterns (<a href="http://danielmall.com/articles/content-display-patterns/">http://danielmall.com/articles/content-display-patterns/</a>)</li>
+            <li>StyleGuides (<a href="http://styleguides.io/">http://styleguides.io/</a>)</li>
+          </ul>
+          <p>All GIFs from <a href="http://uxreactions.com/">http://uxreactions.com/</a>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+        transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+    <div class="sph-digital-logo">
+    <img src="css/theme/img/sphdigital-logo.png" >
+    </div>
+  </body>
+</html>

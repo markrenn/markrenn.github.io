@@ -25,6 +25,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.draw-diagram * {
+  font-family: Helvetica !important;
+  color: #000 !important;
+  font-size: 1em !important;
+}
 .reveal {
   font-family: Anton, "Open Sans", sans-serif;
   font-size: 30px;

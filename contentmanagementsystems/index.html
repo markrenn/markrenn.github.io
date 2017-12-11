@@ -39,6 +39,7 @@
         <section>
           <section>
             <h2>Evolution of our CMS</h2>
+            <aside class="notes">Started using Drupal in 2012</aside>
           </section>
           <section>
             <h3>Progressive Iteration</h3>
@@ -57,55 +58,146 @@
               <li class="fragment fade-right sgsme"><img src="img/sites/sgsme.jpg" width="40%" ></li>
               <li class="fragment fade-right stirr"><img src="img/sites/stirr.jpg" width="40%" ></li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>Old site in Vignette</li>
+                <li>BT and ST was built in Drupal 6 by Mavenlab 2011</li>
+                <li>Yourhealth in D7</li>
+                <li>BH first full site in D7.. hermes workflow (print to digital) improvements</li>
+                <li>Singapolitics, first responsive site in SPH built in d7</li>
+                <li>Technical Maturity/Confidence .. built BT in 2014</li>
+                <li>TNP migration</li>
+                <li>ST, workflow improvements, image mnmgt, containers</li>
+                <li>tnp lots of improvement</li>
+                <li>stirr D8</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Common Normalised Schema</h3>
             <img class="fragment fade-right" src="img/schema.jpg" width="80%" >
+            <aside class="notes">Working on multiple brands with different stakeholders, we realised the need to start standardisation
+              <ul>
+                <li>Need for a Distribution</li>
+              </ul>
+            </aside>
+
           </section>
           <section>
             <h3>Editor Empowerment</h3>
             <img class="fragment fade-right" src="img/training-the-cms.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>To efficiently support several titles, we need to help content creators navigate and learn the cms with as little support as possible</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <img class="fragment fade-right" src="img/user-management.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>whenever possible, enable our users to complete the mundane administrative tasks</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <img class="fragment fade-right" src="img/analytics.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>expose information that can help them make the necessary editorial decisions</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Layout and Content Curation</h3>
             <img class="fragment fade-right" src="img/panelizer.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>empower content creators to package groups of articles and build landing pages</li>
+                <li>double edged sword</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Push for Style Guides and Pattern Libraries</h3>
             <img class="fragment fade-right tnp-styleguide" src="img/tnp-styleguide.jpg" width="60%" >
             <img class="fragment fade-right sgsme-styleguide" src="img/sgsme-styleguide.jpg" width="60%" >
             <img class="fragment fade-right st-styleguide" src="img/st-styleguide.jpg" width="60%" >
+            <aside class="notes">
+              <ul>
+                <li>front end style guides documents the visual language and logical elements in a website </li>
+                <li>gives meaning and purpose to typography, color swatches, graphics, buttons, grids, etc</li>
+                <li>pattern library - reusable components that can be combined for different needs: carousels, story cards, headers, accordions </li>
+                <li>must work closely with designers to build an effective style guide</li>
+              </ul>
+            </aside>
           </section>
         </section>
         <section>
 		      <section>
 	          <h2>Systems Architecture</h2>
             <img class="fragment fade-right" src="img/DrupalSPH-Infra.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>Cite ST as standard architecture</li>
+                <li>Rely heavily in caching on several levels (CDN, Varnish, Memcached)</li>
+                <li>admin site is protected from public access</li>
+              </ul>
+            </aside>
 		      </section>
 		      <section>
 		        <h2>Publishing Workflow</h2>
+            <aside class="notes">
+              <ul>
+                <li>improved throughout the years</li>
+                <li>from Print stories sent to Drupal after offstone</li>
+                <li>to breaking news sent instantly to drupal for quick publishing </li>
+              </ul>
+            </aside>
 		      </section>
           <section>
             <h3 class="fragment fade-right">From Hermes to Drupal to Mobile Apps and beyond</h3>
             <img class="fragment fade-right" src="img/Hermes-Workflow.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>consists of several steps</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3 class="fragment fade-right">Distributed Content</h3>
             <img class="fragment fade-right" src="img/Facebook-v-Google.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>step further beyond our ecosystem</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h3>Distributed Content</h3>
             <img  src="img/Hermes-Workflow-DC.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2>Code Deployment</h2>
             <img class="fragment fade-right" src="img/CI-CD.jpg" width="100%" >
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
 		      <section>
 		        <h1>Challenges</h1>
@@ -116,6 +208,13 @@
               <li class="fragment fade-right">Flexibility vs Robustness</li>
               <li class="fragment fade-right">Automated vs Manual</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>different targets (ad revenues, budget, pageviews, elegant code, zero bugs, minimal maintenance, security)</li>
+                <li>varied skill levels means different levels of understanding on what must be prioritized</li>
+                <li>a healthy balance of automation and manual work is crucial</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2 class="fragment fade-right">Content Model and Strategy</h2>
@@ -125,6 +224,15 @@
               <li class="fragment fade-right"><a href="https://vimeo.com/228908312 " target="_blank">Flexible and Cohesive Design</a> </li>
               <li class="fragment fade-right">Content Management ≠ Web Publishing</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>Content must be able to stand alone and be experienced completely regardless of what medium was used to obtain it</li>
+                <li>letting go of a print mind set that is heavily dependent on visuals is critical to achieving this</li>
+                <li>ST inspiration from The Guardian, BT inspiration from NYT but content strategy never truly considered</li>
+                <li>Yesenia Perez-Cruz, design director of Vox Media shared how they were able to come up with Flexible Design System for Vox media which is used on multiple sites like Vox, SBNation, The Verge, Polygon, Eater, etc</li>
+                <li>sometimes focus is more on the web publishing part which takes the resources from the content management part which in the end will lead to a very messy content system</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2 class="fragment fade-right">Fragmented Solutions</h2>
@@ -132,6 +240,16 @@
               <li class="fragment fade-right">Multiple Brands - Different Solutions</li>
               <li class="fragment fade-right">No single vocabulary</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>With several independent agile teams, solutions are tailor-made.</li>
+                <li>Best practices are not shared</li>
+                <li>Mistakes may be repeated by other teams</li>
+                <li>No standard solution so working with other parties can become difficult</li>
+                <li>Different brands with very similar requirements use different ways of calling the same things</li>
+                <li>An initiative to standardise is needed before we branch out further...</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2 class="fragment fade-right">AX (Author Experience)</h2>
@@ -139,6 +257,19 @@
               <li class="fragment fade-right"><a href="https://alistapart.com/article/training-the-cms" target="_blank">Training the CMS</a> - how to make the CMS less scary for content creators</li>
               <li class="fragment fade-right">Optimised editorial workflow is an opportunity to unburden the CMS from doing unnecessary heavy lifting</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>often times it is hard for editors to describe their pain points with CMS's</li>
+                <li>bad AX leads to frustration</li>
+                <li>it's not working, i guess we should redesign but then it turns out the problem is actually with workflow</li>
+                <li>they may find products/vendors that promises to provide all these features but does not truly understand what the problem is to begin with but just like in every relationship... don't trust them if they promise you everything</li>
+                <li>author training for features requested but never again use</li>
+                <li>it is a skill that needs to be used and honed</li>
+                <li>worse when they come up with repurposed solutions</li>
+                <li>factor in cost of bad AX overtime</li>
+                <li>uat is not a step in the process</li>
+              </ul>
+            </aside>
           </section>
         </section>
         <section>
@@ -147,6 +278,13 @@
               <li class="fragment fade-right">What it does</li>
               <li class="fragment fade-right">Goals</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
         </section>
         <section>
           <h1>What we should look forward to</h1>
@@ -154,21 +292,48 @@
         <section>
           <section>
             <h1>Drupal 8</h1>
+            <aside class="notes">
+              <ul>
+                <li>Currently we have two sites in D8</li>
+                <li>only familiar with Stirr</li>
+                <li>Stirr has very basic requirements</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2>What Drupal 8 offers</h2>
+            <aside class="notes">
+              <ul>
+                <li>based on Symfony, following better standards (MVC)</li>
+                <li>significantly faster and less bloat</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h1 style="line-height: 0; white-space: nowrap;"><small>Development and Release Cycle</small></h1>
             <img src="img/drupal-release-cycle.png" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li>Released Nov 2015 .. over 2 years old</li>
+                <li>Complete rewrite </li>
+                <li>Solutions in D7 will have to be rebuilt to work in D8</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h1 style="line-height: 0; white-space: nowrap;"><small>Past Milestones</small></h1>
             <img src="img/d8-past-milestones.jpg" width="80%" >
-             <ul>
+            <ul>
               <li class="fragment fade-right">Media API</li>
               <li class="fragment fade-right">Layout Discovery API</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>8.4 released last October</li>
+                <li>Crucial modules like Media still fairly basic</li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h1 style="line-height: 0; white-space: nowrap;"><small>Current Development Cycle</small></h1>
@@ -179,19 +344,53 @@
               <li class="fragment fade-right">Layout Builder</li>
               <li class="fragment fade-right">API First</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h1 style="line-height: 0; white-space: nowrap;"><small>Next Development Cycle</small></h1>
             <img src="img/d8-next-dev-cycle.jpg" width="80%" >
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section>
-            <h1>How ready are we for D8?</h1>
+            <h1>Are we ready for D8?</h1>
             <h2 class="fragment fade-right" >Yes and No</h2>
+            <aside class="notes">
+              <ul>
+                <li>It is critical that we migrate all our D7 sites before security fixes end for D7</li>
+                <li>Lots of the solutions we have deployed on our current sites are dependent on modules not yet available/matured on d8</li>
+                <li>must rethink these solutions</li>
+                <li>path forward may be decoupled and headless solutions</li>
+              </ul>
+            </aside>
           </section>
         </section>
         <section>
           <section>
             <h2>Decoupled and Headless Solutions</h2>
+            <aside class="notes">
+              <ul>
+                <li>drupal is excellent CMS but poor front end, heavily dependent on caching</li>
+                <li>TodayOnline and FT as samples of headless solutions</li>
+                <li>needs a right reason, not just because it is new or because company A is doing it</li>
+                <li>needs increased technical expertise on several new technology</li>
+                <li>thinning expertise layer</li>
+                <li>may take longer time to deal with bugs because of several systems involved</li>
+                <li>a bad design can be critically</li>
+                <li>there's a reason why this is becoming a common practice</li>
+              </ul>
+            </aside>
           </section>
           <section>
             <h2>Distributed Content in Steroids</h2>
@@ -199,9 +398,39 @@
               <img src="img/buzzfeed_networks.png" width="50%" ><br />
               <a href="http://blog.naytev.com/what-networks-does-buzzfeed-use/" target="_blank"><small>http://blog.naytev.com/what-networks-does-buzzfeed-use/</small></a>
             </div>
+            <aside class="notes">
+              <ul>
+                <li>End product is no longer the website or the mobile app</li>
+                <li>It has always been the content</li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
         </section>
-
+        <section>
+          <blockquote class="fragment fade-right">
+            Users couldn’t care less about whether a technology is native, an installed web app or a website. What makes users engage and makes shoppers convert is really the experience itself.<br/> <cite>- Mitch Lenton, Designing for a Browserless Web</cite><br /><a href="https://www.smashingmagazine.com/2017/11/designing-for-a-browserless-web/" style="font-size: 0.2em;">https://www.smashingmagazine.com/2017/11/designing-for-a-browserless-web/</a>
+          </blockquote>
+            <aside class="notes">
+              <ul>
+                <li>In Closing</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
+        </section>
+        <section>
+          <blockquote class="fragment fade-right" style="text-align: center;">
+            Build applications as if you have to support it forever and start again from scratch tomorrow
+          </blockquote>
+            <aside class="notes">
+              <ul>
+                <li>In Closing</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
+        </section>
         <section>
           <h1>Thank you!</h1>
         </section>

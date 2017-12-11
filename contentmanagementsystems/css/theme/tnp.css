@@ -358,3 +358,115 @@ ul.styleguide-flavors li:nth-child(6) {
     color: #FFF;
     font-size: 12px;
 }
+
+li.fragment.fade-right.bt2012.visible {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+}
+
+li.fragment.fade-right.st2012.visible {
+    position: absolute;
+    left: 180px;
+    top: 70px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.yourhealth.visible {
+    position: absolute;
+    left: 520px;
+    top: 90px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.bh2013.visible {
+    position: absolute;
+    left: 640px;
+    top: 70px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.singapolitics.visible {
+    position: absolute;
+    left: -20px;
+    top: 150px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.tnp2013.visible {
+    position: absolute;
+    left: 240px;
+    top: 130px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.bt2015.visible {
+    position: absolute;
+    left: 340px;
+    top: 140px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.tnp2015.visible {
+    position: absolute;
+    left: 590px;
+    top: 170px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.st2016.visible {
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.bh2015.visible {
+    position: absolute;
+    left: 240px;
+    top: 220px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.tnp2016.visible {
+    position: absolute;
+    left: 620px;
+    top: 280px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.sgsme.visible {
+    position: absolute;
+    left: 130px;
+    top: 310px;
+    list-style-type: none;
+    width: 100%
+}
+li.fragment.fade-right.stirr.visible {
+    position: absolute;
+    left: 520px;
+    top: 360px;
+    list-style-type: none;
+    width: 100%
+}
+img.fragment.fade-right.tnp-styleguide.visible {
+    position: absolute;
+    left: -140px;
+    width: 60%;
+    min-height: 380px;
+}
+
+img.fragment.fade-right.sgsme-styleguide.visible {
+    position: absolute;
+    width: 60%;
+    left: 190px;
+    min-height: 440px;
+}
+img.fragment.fade-right.st-styleguide.visible {
+    position: absolute;
+    width: 50%;
+    min-height: 270px;
+    left: 610px;
+}
+}

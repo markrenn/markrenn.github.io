@@ -358,6 +358,8 @@ ul.styleguide-flavors li:nth-child(6) {
 }
 .sph-digital-logo::before {
     content: '@markrenn';
+  font-family: Helvetica !important;
+
     color: #FFF;
     font-size: 12px;
 }

@@ -27,6 +27,14 @@
       <div class="slides">
         <section data-transition="zoom">
           <h1 class="fragment">Accelerated Mobile Pages<br /><small>SPH Digital</small></h1>
+          <aside class="notes">
+            <ul>
+              <li>Initiative spearheaded by Google to make mobile browsing faster</li>
+              <li>Enforces a discipline of using a standard of basic html elements and JavaScript libraries</li>
+              <li>Takes advantage of Google's CDN</li>
+              <li>access AMP from a Google Search. Distributed Content Model</li>
+            </ul>
+          </aside>
         </section>
         <section>
           <section data-transition="fade-in slide-out">
@@ -35,6 +43,14 @@
               <blockquote>"Google has overtaken Facebook as the top source of external traffic for publishers, according to web analytics firm Parsely"</blockquote>
               <div class="url">https://digiday.com/media/how-google-amp-won-over-facebook/</div>
             </div>
+            <aside class="notes">
+              <ul>
+                <li>An article published last month on Digiday states that while the use of FB IA has stagnated, AMP has only grown in importance to publishers</li>
+                <li>Just last Friday, Columbia Journal Review published a story stating that over half of FB IA partners have already abandoned the format</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section data-transition="fade-in slide-out">
             <h2>SPH Sites on AMP</h2>
@@ -43,23 +59,31 @@
                 <td>
                   <div class="fragment slide-in">
                     <h3>AsiaOne</h3><br/>
-                    <img src="img/asiaone-amp.gif" alt="AsiaOne on AMP"  />
+                    <img src="img/asiaone-amp.png" alt="AsiaOne on AMP"  />
                   </div>
                 </td>
                 <td>
                   <div class="fragment slide-in">
                     <h3>StraitsTimes Food Section</h3>
-                    <img src="img/st-amp.gif" alt="StraitsTimes Food Section on AMP"  />
+                    <img src="img/st-amp.png" alt="StraitsTimes Food Section on AMP"  />
                   </div>
                 </td>
                 <td>
                   <div class="fragment slide-in">
                     <h3>ZaoBao Entertainment Section</h3>
-                    <img src="img/zaobao-amp.gif" alt="ZaoBao Entertainment Section on AMP"  />
+                    <img src="img/zaobao-amp.png" alt="ZaoBao Entertainment Section on AMP"  />
                   </div>
                 </td>
               </tr>
             </table>
+            <aside class="notes">
+              <ul>
+                <li>Here in SPH, we started working on AMP early on 2016 and had a POC on BH by May</li>
+                <li>Initial challenges we faced were the support for Ads and Analytics as well as the rapidly evolving standards of the format</li>
+                <li>Another challenge is that we have complicated complicated article format, which is difficult to translate to AMP</li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
         </section>
 
@@ -68,46 +92,40 @@
             <h1>Two-part Implementation</h1>
             <div class="fragment slide-in">
               <ul>
-                <li class="fragment slide-in">Online tools are available to help convert stories to AMP format</li>
+                <li class="fragment slide-in">Online tools and libraries are available to help convert stories to AMP format</li>
                 <li class="fragment slide-in">Editorial Training</li>
               </ul>
             </div>
+            <aside class="notes">
+              <ul>
+                <li>Google on its part has provided an extensive documentation on how to get AMP working</li>
+                <li>Plugins and Modules for popular CMSs are available to help convert stories to AMP easier</li>
+                <li>Second part is as important, but I'll get back to that later</li>
+              </ul>
+            </aside>
           </section>
           <section data-transition="fade-in slide-out">
             <div class="fragment fade-in slide-out">
               <h2><a href="https://www.drupal.org/project/amp" target="_blank">Drupal AMP Module</a></h2>
-              <aside class="notes">
-                <ul>
-                  <li>Designed to convert Drupal pages into pages that comply with the AMP standard</li>
-                  <li>Can be enabled for any node type</li>
-                  <li>AMP content becomes available by appending <code>?amp</code> on URLs
-                    <ul><li><code>/category/my-article/</code> to <code>category/my-article?amp</code></li></ul>
-                  </li>
-                  <li>Supported AMP Components
-                    <ul><li><code>[amp-ad]</code>,<code>[amp-pixel]</code>,<code>[amp-img]</code>,<code>[amp-video]</code>,<br><code>[amp-analytics]</code> and <code>[amp-iframe]</code></li></ul>
-                  </li>
-                  <li><code>&lt;body&gt;</code> field presents a special problem, since it is likely to contain lots of invalid markup</li>
-                  <li>Supports Drupal 7 and Drupal 8</li>
-                </ul>
-              </aside>
             </div>
 
             <div class="fragment fade-in slide-out">
               <h2><a href="https://www.drupal.org/project/amptheme" target="_blank">Drupal AMP Theme</a></h2>
-              <aside class="notes">
-                <ul>
-                  <li>Works together with the AMP module and AMP library to convert Drupal pages into pages that comply with the AMP standard</li>
-                  <li>Includes AMP Base theme, which handles markup changes needed for all AMP-based themes</li>
-                  <li>Includes a ExAMPle Subtheme, which shouws how to set custom styles with AMP</li>
-                  <li>A custom subtheme can then be made that extends the AMP-Base theme to create custom design for site's AMP pages</li>
-                </ul>
-              </aside>
             </div>
 
             <div class="fragment fade-in slide-out">
               <h2><a href="https://github.com/Lullabot/amp-library" target="_blank">AMP PHP Library</a></h2>
               <aside class="notes">
                 <ul>
+                  <li>For our Drupal powered CMSs, we have this available tools to help build articles in AMP format</li>
+                  <li>Supports Drupal 7 and Drupal 8</li>
+                  <li>Can be enabled for any node type</li>
+                  <li>Provides support for various AMP Components
+                    <ul><li><code>[amp-ad]</code>,<code>[amp-pixel]</code>,<code>[amp-img]</code>,<code>[amp-video]</code>,<br><code>[amp-analytics]</code> and <code>[amp-iframe]</code></li></ul>
+                  </li>
+                  <li><code>&lt;body&gt;</code> field presents a special problem, since it is likely to contain lots of invalid markup</li>
+                  <li>Includes a ExAMPle Subtheme, which shouws how to set custom styles with AMP</li>
+                  <li>A custom subtheme can then be made that extends the AMP-Base theme to create custom design for site's AMP pages</li>
                   <li>Open source and pure PHP library</li>
                   <li>Built and maintained by Lullabot</li>
                   <li><span >Converts Regular HTML to AMP HTML</span>
@@ -141,19 +159,41 @@
             <div class="fragment">
               <p>Most AMP views come from Google search results — meaning the user has already expressed a level of interest high enough to type in some search terms, look through options, and pick one. </p>
               <div class="url">http://www.niemanlab.org/2017/09/publishers-are-seeing-real-performance-gains-from-google-amp-and-facebook-instant-articles-but-remains-a-question-mark/</div>
-
             </div>
+            <aside class="notes">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section data-transition="fade-in slide-out">
-            <h2><a href="https://www.drupal.org/project/amptheme" target="_blank">ST on AMP</a></h2>
+            <h2>ST on AMP</h2>
             <img src="img/st-GA-AMP-chart.jpg" alt="ST Google AMP Analytics" style="max-width: 55%;" />
             <img src="img/st-GA-AMP-table.jpg" alt="ST Google AMP Analytics" style="max-width: 60%;" />
             <div><small>* no significant effect on bounce rates</small></div>
+            <aside class="notes">
+              <ul>
+                <li>40% of mobile traffic is refered from Google</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section data-transition="fade-in slide-out">
-            <h2><a href="https://www.drupal.org/project/amptheme" target="_blank">AsiaOne on AMP</a></h2>
+            <h2>AsiaOne on AMP</h2>
             <img src="img/asiaone-analytics.jpg" alt="AsiaOne Google AMP Analytics" style="max-width: 60%;" />
-
+            <aside class="notes">
+              <ul>
+                <li>35% of mobile traffic is refered from Google</li>
+                <li>no significant change in bounce rate</li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
           <section data-transition="fade-in slide-out">
             <h2><a href="https://www.drupal.org/project/amptheme" target="_blank">Other Publishers</a></h2>
@@ -182,8 +222,16 @@
                   <li class="fragment fade-in slide-out"><a href="https://www.ampproject.org/amp-conf-2017/#nataliabaltazar">Presented at AMP Conf last year</a></li>
                 </ul>
               </li>
-              <li class="fragment fade-in slide-out"><a href="http://www.niemanlab.org/2017/03/google-backed-amp-pages-are-coming-to-some-of-asias-most-popular-search-engines/">Baidu</a> (<a href="http://www.dragonmetrics.com/baidu-launches-their-own-amp-mobile-instant-pages-mip/">MIP</a>), China’s largest search engine, and Sogou said that AMP pages would now show up in search results there.</li>
+              <li class="fragment fade-in slide-out"><a href="http://www.niemanlab.org/2017/03/google-backed-amp-pages-are-coming-to-some-of-asias-most-popular-search-engines/">Baidu</a>, China’s largest search engine, and Sogou said in AMP Conf 2017 that AMP pages would now show up in their search results. (<a href="http://www.dragonmetrics.com/baidu-launches-their-own-amp-mobile-instant-pages-mip/">MIP</a>)</li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>Baidu's own format called MIP(mobile instant pages) - techinical aspects almost the same as AMP</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </aside>
           </section>
         </section>
 
@@ -198,7 +246,7 @@
                 Short-term Goals
                 <ul>
                   <li class="fragment fade-in slide-out">BH, BT, Stomp with their mostly basic article layouts are best candidates for AMP</li>
-                  <li class="fragment fade-in slide-out">Implement better AMP analytics</li>
+                  <li class="fragment fade-in slide-out">Implement better SEO and AMP analytics</li>
                 </ul>
               </li>
               <li class="fragment fade-in slide-out">
@@ -213,9 +261,22 @@
                     </ul>
                   </li>
                   <li class="fragment fade-in slide-out">Preparation for <a href="https://www.bloomberg.com/news/articles/2017-08-18/google-like-facebook-unfurls-subscription-tool-for-publishers">Google Subscription Tool</a> and <a href="https://www.bloomberg.com/news/articles/2017-07-20/facebook-testing-new-tool-to-boost-subscriptions-for-publishers">similar formats</a></li>
+                  <li class="fragment fade-in slide-out">AMP also works for <a href="https://www.iprospect.com/en/gb/blog/google-amp-and-ecommerce-into-2017/">E-commerce</a> and online directories</li>
                 </ul>
               </li>
             </ul>
+            <aside class="notes">
+              <ul>
+                <li>Keyword here is discipline, we are not obligated to use AMP but the performance benefits that AMP structure is providing should guide us on how we should present our stories and build our sites</li>
+                <li>Many of our sites have a somewhat basic article layout so it should be fairly easy to convert them to AMP format</li>
+                <li>A more detailed study of our mobile traffic and search referals should help us optimize how much effort we should devote to providing AMP formats</li>
+                <li>of course SEO is key here (at least for now) because unless our content appear in search results, readers will not be able to find our content</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>Ebay, Shopify</li>
+              </ul>
+            </aside>
           </section>
           <section data-transition="fade-in slide-out">
             <h2>Word of warning</h2>
